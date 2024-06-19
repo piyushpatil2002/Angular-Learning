@@ -1,0 +1,169 @@
+<!-- <h1>Hello World!!{{title}}</h1> -->
+<!-- <button (click)="getFirstName('Hello')">Click me</button> -->
+<!-- <button (click)="getLastName('World')">Second</button> -->
+<!-- <br><br> -->
+<!-- <button (click)="getData('hello')" >Call</button>
+<br><br>
+<input type="text" #box (keyup)="getData(box.value)" placeholder="Keyup It is" />
+<br><br>
+<input type="text" #box1 (keydown)="getData(box1.value)" placeholder="Key down it is" />
+<br><br>
+<input type="text" #box2 (blur)="getData(box2.value)" placeholder="Blur It is" /> -->
+<!-- <input type="text" #box placeholder="Enter Name" name="name"/>
+<button (click)="getName(box.value)">Click</button> -->
+<!-- Display input data -->
+<!-- <p>
+    Name is: <b>{{displayval}}</b>
+</p> -->
+<!-- <button (click)="counter('plus')">++</button> -->
+<!-- <p> Count: {{count}}</p> -->
+<!-- <button (click)="counter('minus')">--</button> -->
+<!-- <h1 class="heading">Hello World!!{{title}}</h1> -->
+
+<!-- <input type="text" name="user-name" value="{{name}}" disabled={{disable}}>
+<br><br>
+<input type="text" name="user-name" [value]="name" [disabled]=disable> -->
+
+<!-- If Else Condition -->
+<!-- <h1 class="heading">If-Else condition</h1>
+<h1 *ngIf="show=='yes'; then  ifBlock else elseBlock"> 
+    Okay 
+</h1>
+<ng-template #ifBlock>
+    <h1>IF condition</h1>
+</ng-template>
+<ng-template #elseBlock>
+    <h1>Else condition</h1>
+</ng-template> -->
+
+<!-- Else if -->
+<!-- <ng-template [ngIf]="color=='red'">
+    <h1 style="color: red;">Red Color</h1>
+</ng-template>
+<ng-template [ngIf]="color==='green'">
+    <h1 style="color: green;">Green Color</h1>
+</ng-template>
+<ng-template [ngIf]="color==='yellow'">
+    <h1 style="color:yellow;">Yellow Color</h1>
+</ng-template>
+ -->
+
+<!-- Switch -->
+<!-- <div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'red'" style="color: red;">Red Color</h1>
+    <h1 *ngSwitchCase="'green'" style="color: green">Green Color</h1>
+    <h1 *ngSwitchDefault>Unknown    Color</h1>
+
+</div> -->
+
+<!-- For Loop -->
+<!-- <h2 *ngFor ="let item of users">{{item}}</h2> -->
+<!-- <h2 *ngFor ="let item of userDetails">{{item.Dept}}--{{item.name}}</h2> -->
+
+<!-- <h1>{{title}}</h1> -->
+
+<!-- Nested Loop -->
+<!-- <ul *ngFor="let user of userss">
+    <li>{{user.name}}</li>
+    <li>{{user.phone}}</li>
+
+</ul> -->
+
+<!-- Style  Binding -->
+<!-- <h1 style="color:green;">{{title}}</h1>
+<h1 [style.color]="color" [style.backgroundColor]="bgColor">{{title}}</h1>
+<button (click) = "updatecolor()">Update Color</button> -->
+
+
+<!-- Nav Call -->
+<app-header></app-header>
+
+<br>
+
+<!-- Form -->
+<!-- <div class="form-container">
+<form #basicform="ngForm" (ngSubmit)="getformdata(basicform.value)">
+    <input type="text" ngModel name="user" placeholder="Enter Name" />
+    <br><br>
+    <input type="text" ngModel name="email" placeholder="Enter Email">
+    <br><br>
+    <input type="text" ngModel name="password" placeholder="Enter password">
+    <br><br>
+    <button>Register</button>
+</form>
+</div> -->
+
+<!-- Form Data Display -->
+<!-- <ul>
+    <li>{{userdata.user}}</li>
+    <li>{{userdata.email}}</li>
+    <li>{{userdata.password}}</li>
+</ul> -->
+
+<!-- Toggle -->
+<!-- <button (click)="toggle()">Toggle</button>
+<h1 *ngIf="display">
+    Bye
+</h1> -->
+
+<!-- Bootstrap -->
+<!-- <ngb-alert [dismissible]="false">
+	<strong>Warning!</strong> Better check yourself, you're not looking too good.
+</ngb-alert> -->
+
+
+<!-- Material UI -->
+<!-- <div class="demo-section">
+  Icon with a badge
+  <mat-icon matBadge="15">home</mat-icon>
+    <span class="cdk-visually-hidden">
+      Example with a home icon with overlaid badge showing the number 15
+    </span>
+</div> -->
+
+<div class="todocontainer">
+<!-- <h1 class="title">{{Name}}</h1>
+<br> -->
+
+<!-- Add Task -->
+<!-- <input type="text" placeholder="Enter New Task" #task>
+<br><br>
+<button mat-flat-button (click)="addtask(task.value)">Add Task</button>
+<br> -->
+
+<br>
+
+<!-- Remove Task -->
+<!-- <ul *ngFor="let item of list">
+    <li>{{item.name}}
+        <button mat-stroked-button (click)="removetask(item.id)">Remove</button>
+    </li>
+</ul>
+</div> -->
+
+<!-- <app-child [item]="data"></app-child>
+<button (click)="updateChild()">Update Child Component</button> -->
+
+
+<!-- <h1>{{title}}</h1>
+<ul *ngFor="let user of userDetails">
+    <app-userdetails [item]='user'></app-userdetails>
+</ul> -->
+
+<!-- Send Data Child to Parent -->
+<!-- <h1>{{title}}</h1>
+<app-child (updateDataevent)="updateData($event)"></app-child>
+<h1>{{data}}</h1> -->
+
+
+<!-- Two Way binding -->
+<!-- <h2>Two Way Binding</h2>
+<input type="text" [(ngModel)]="name" placeholder="Enter">
+<br>
+<h3>{{name}}</h3> -->
+
+<!-- Template Reference Variable -->
+
+<h1>{{title}}</h1>
+<input type="text" #box placeholder="Enter userName">
+<button (click)="getval(box.value)">Call Function</button>
